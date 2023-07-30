@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Castoro+Titling&family=Comme:wght@300&family=Dai+Banna+SIL:ital,wght@1,300&family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Castoro+Titling&family=Comme:wght@300&family=Dai+Banna+SIL:ital,wght@1,300&family=Oxygen&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- navbar -->
+<div class="navbar">
+    <ul>
+        <li>
+            <h1>Food,LLC</h1>
+        </li>
+    </ul>
+    <div class="dropdown" id="none">
+        <button class="dropbtn"><img src="img/menu.png" alt=""></button>
+    </div> 
+</div>
+<div class="dropdown-content" id="none">
+    <a href="#">Chicken</a>
+    <a href="#">Beef</a>
+    <a href="#">Sushi</a>
+</div>
+<!-- body -->
+<div class="main">
+    <h1>Our Menu</h1>
+</div>
+<div class="body">
+    <div class="chicken">
+        <h1>Chicken</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum massa non consectetur porttitor. Nam quis orci non turpis dictum ultricies ut at nisi. Nam auctor ultricies sem, eu iaculis eros feugiat sed. Morbi dapibus imperdiet leo, vitae molestie tortor dignissim vitae. Maecenas tincidunt suscipit ullamcorper. Quisque dignissim metus interdum, facilisis mi vitae, pretium augue. Vivamus id augue quis nisl laoreet pulvinar facilisis vel lorem.
+        Nullam non mauris vel tortor tincidunt efficitur id in mi. In erat velit</p>
+    </div>
+    <div class="beef">
+        <h1>Beef</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum massa non consectetur porttitor. Nam quis orci non turpis dictum ultricies ut at nisi. Nam auctor ultricies sem, eu iaculis eros feugiat sed. Morbi dapibus imperdiet leo, vitae molestie tortor dignissim vitae. Maecenas tincidunt suscipit ullamcorper. Quisque dignissim metus interdum, facilisis mi vitae, pretium augue. Vivamus id augue quis nisl laoreet pulvinar facilisis vel lorem.
+        Nullam non mauris vel tortor tincidunt efficitur id in mi. In erat velit</p>
+    </div>
+    <div class="sushi">
+        <h1>Sushi</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum massa non consectetur porttitor. Nam quis orci non turpis dictum ultricies ut at nisi. Nam auctor ultricies sem, eu iaculis eros feugiat sed. Morbi dapibus imperdiet leo, vitae molestie tortor dignissim vitae. Maecenas tincidunt suscipit ullamcorper. Quisque dignissim metus interdum, facilisis mi vitae, pretium augue. Vivamus id augue quis nisl laoreet pulvinar facilisis vel lorem.
+        Nullam non mauris vel tortor tincidunt efficitur id in mi. In erat velit</p>
+    </div>
+</div>
+
+
+
+
+    
+<script src="bootstrap-5.3.0-dist/js/jquery.min.js"></script>
+<script src="bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+<script src="js/indext.js"></script>
+<script>
+    document.querySelector('.dropbtn').addEventListener('click', function() {
+      var dropdownContent = document.querySelector('.dropdown-content');
+      
+      if (dropdownContent.style.display === 'block') {
+        dropdownContent.style.display = 'none';
+      } else {
+        dropdownContent.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

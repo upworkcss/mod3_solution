@@ -1,0 +1,91 @@
+#none{
+    display: none;
+}
+.navbar{
+    background-color: #999999;
+    border: 3px solid black;
+    align-items: center;
+}
+ul li h1{
+    font-family: 'Amiri', serif;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Comme', sans-serif;
+    font-family: 'Dai Banna SIL', serif;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 900;
+}
+.main h1{
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 700;
+    font-family: 'Amiri', serif;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Comme', sans-serif;
+    font-family: 'Dai Banna SIL', serif;
+    font-family: 'Oxygen', sans-serif;
+}
+.body{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+.chicken,.beef,.sushi{
+    background-color: #999999;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.chicken h1,.beef h1,.sushi h1{
+    text-align: center;
+}
+.beef{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+                           /* media sm*/
+@media  (min-width: 768px) and (max-width:992px){
+    .body{
+        grid-template-columns: auto auto;
+    }
+    .sushi{
+        margin-top: 40px;
+        width: 197%;
+    }
+}
+                           /* media xs*/
+@media  (max-width: 768px){
+    #none{
+        display: inline;
+    }
+    .body{
+        grid-template-columns: auto;
+    }
+    .beef{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .sushi , .beef{
+        margin-top: 40px;
+    }
+    button img{
+        width: 57px;
+        padding-bottom: 5px;
+    }
+    button{
+        background: white;
+        text-align: center;
+    }
+    .dropdown{
+        margin-right: 53px;
+    }
+    .dropdown-content a{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
